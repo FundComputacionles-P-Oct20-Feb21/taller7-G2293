@@ -1,0 +1,43 @@
+1. Inicio
+
+2. nombre, x(200)[{a-z},{A-Z},{BS}]
+3. posicion, x(200)[{a-z},{A-Z},{BS}]
+4. cadenaacumulacion, x(200)[{a-z},{A-Z},{BS}] <-- ""
+5. edad, i[0,n]
+6. estatura, d[0,n]
+7. sumaedad, d[0,n] <-- 0
+8. sumaestatura, d[0,n] <-- 0
+9. promedioedad, d[0,n] <-- 0
+10. promedioestatura, d[0,n] <--0
+11. bandera, x(2)[{a-z},{A-Z}] <-- "SI"
+12. contador i[0,n] <-- 0
+13. Haga_Hasta
+14.     escribir "Ingresar nombre del jugador"
+15.     Leer nombre
+16.     escribir "Ingresar la posicion en el campo de juego:"
+17.     Leer posicion
+18.     escribir "Ingresar la edad del jugador:"   
+19.     Leer edad
+20.     escribir "Ingresar la estatura del jugador:"
+21.     Leer estatura
+22.     contador <-- contador + 1
+23.     cadenaacumulativo <-- cadenaacumulador + contador + "." + nombre + "-" +
+                          posicion + "-, "+ "edad " + edad + ", "+
+                          "estatura " + estatura + "\n"
+24.     sumaedad <-- promedioedad + edad
+25.     sumaestatura <-- promedioestatura + estatura   
+26.     escribir "Ingresar SI para ingresar mas datos"
+27.     escribir "Ingresar NO para imprimir reporte"
+28.     Leer bandera
+29. Fin Haga_Hasta (bandera != "SI")
+30. promedioedad <-- suma edades / contador
+31. promedioestatura <-- sumaestatura / contador
+32. cadenaacumulativa <-- cadenaacumulativa + "promedio de edades: " + promedioedad +
+                         "\npromedio de estaturas: " + promedioestatura +"\n"
+33. si (bandera -- "No")
+34.     cadenaacumulativa <-- cadenaacumulativa
+35. de lo contrario
+36.     cadenaacumulativa <-- "Datos incorrectos\n"
+37. fin si
+
+38. fin

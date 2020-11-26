@@ -1,0 +1,15 @@
+. Inicio
+
+. numerador1, i[0,n] <--  1
+. numerador, i[0,n] <-- -1
+. contadorDenominador, i[0,n] <-- 1
+. cadena, x(200)[{1-9},{BS}, {/, +, -}] <-- ""
+. Haga_Hasta
+.     cadena <-- cadena + numeradorImpar + "/" + contadorDenominador
+.     contadorDenominador <-- contadorDenominador + 1
+.     cadena <-- cadena + "+" + numeradorPar + "/" + contadorDenominador
+.     contadorDenominador <-- contadorDenominador + 1
+. Fin Haga_Hasta (contadorDenominador <= 10)
+. Escribir cadena
+
+. Fin
